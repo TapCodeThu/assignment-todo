@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); 
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.todo-app {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+#todo-input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+#add-button {
+  padding: 12px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#add-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: #f4f4f9;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.todo-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+.delete-button {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  margin-right: 4px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.tab-button:hover {
+  background-color: #ddd;
+}
+
+.tab-button.active {
+  background-color: #28a745;
+  color: white;
+}
